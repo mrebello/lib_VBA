@@ -1,0 +1,149 @@
+v2.1 (2022-03-16)
+====
+Moved do github
+
+m_VBA_Lib:
+  Item: added negative index to the last (-index) ones
+  File_Load: changed open mode to Binary
+  
+m_Access:
+  fn_Table: added optional timeout
+  Exec_SQL: added optional timeout
+  Errors_Msg: corrected msg in loop
+
+v2.0 (2021-03-03)
+====
+Update to work in VBA x64
+Added Clipboard.bas
+m_VBA_Lib:
+  added TCPConnection
+
+v1.2 (2016-04-13)
+====
+Added compatibility with VBA x64
+
+m_Access:
+  fn_Scalar: added DAO.Recordset (DAO.), removed Trusted_Connection=Yes
+  fn_Table: added DAO.Recordset (DAO.)
+  Exec_SQL: removed dbSeeChanges (in q.Execute)
+  GetString: removed bug from empty recordsource
+  Form_GUID: removed bug from function return
+  added GetFixedSizeTXT, Replace_Table_Connections, ADORecordsetMemory
+  
+m_Crypt:
+  DecodeArray64: removed bug from function return
+  Encode64: removed bug from function return
+  
+m_VBA_Lib:
+  Shell_InOut: ShellEx replace vbMinimizedNoFocu to vbHide (to not remove focus from application)
+  DNS: added User or parameters
+  SQL_Value: Added POSTGRES server (POSTGRES or POSTGRESQL or PG)
+  UTF8_Decode: Added BOF remove
+  added SQL_Format, UTF8_Encode_Escaped, Date_Between
+  
+
+v1.1.8 (2012-07-04)
+======
+m_VBA_Lib:
+  added SetClipboard, GetClipboard
+  function xx: ss
+  
+=======
+v1.1.11 (2012-09-28)
+=======
+m_VBA_Lib:
+  added: Process_List
+  removed: DSN
+  added: DSN_Generic, DSN_SQLServer,DSN_Firebird,DSN_MySQL
+ 
+m_Access:
+  fn_Scalar: added UID and PWD parameters
+  Form_GUID: bug
+  
+m_Crypt:
+  DecodeArray64: bug
+  EncodeArray64: bug
+  
+
+v1.1.10 (2012-08-10)
+=======
+m_VBA_Lib:
+  RTrimEX: bug with zero lenght text
+  added PegaCEP: get Brazilian CEPs
+  
+
+v1.1.9 (2012-08-06)
+======
+m_VBA_Lib:
+  added PhysicalDisk, DiskInfo
+
+
+v1.1.8 (2011-12-06)
+======
+m_VBA_Lib:
+  removed Option Compare Database (not present in VB6)
+  Recoded File_Load: error in load of binary files
+
+
+>>>>>>> .r21
+v1.1.7 (2011-03-31)
+======
+m_VBA_Lib:
+  function SQL_Value: bug in date
+
+
+v1.1.6 (2011-03-10)
+======
+m_VBA_Lib:
+  added UTF8_Decode, UTF8_Encode
+
+
+v1.1.5 (2011-03-05)
+======
+m_VBA_Lib:
+  added ODBC_Control
+  
+
+v1.1.4 (2011-02-17)
+======
+m_VBA_Lib:
+  DSN - bug in sUser variable name
+m_Crypt:
+  Modified Passwd_Init - added Salt parameter
+  Recoded: DecodeArray64 and EncodeArray64
+
+
+v1.1.3 (2011-02-03)
+======
+m_VBA_Lib:
+  Added End_With
+  SQL_Value - date allow date and time
+ 
+
+v1.1.2 (2010-12-20)
+======
+m_VBA_Lib:
+  Modified DNS - added User/Pass parameters
+  Added XML_Escape
+  Added Module11
+ 
+
+v1.1  (2010-08-31)
+====
+Added File_Exist function to m_VBA_Lib
+Added Encode64, Decode64 to m_Crypt
+
+
+v1.01.1  (2010-08-13)
+=======
+MinEx bug
+
+
+v1.01  (2010-07-27)
+=====
+GUID renamed to Form_GUID
+
+
+v1.0  (2010-07-23)
+====
+First release
